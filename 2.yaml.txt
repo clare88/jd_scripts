@@ -40,9 +40,9 @@ rules:
   - DOMAIN-SUFFIX,kongxiangrui.xyz,Shadowsocks-2
   - GEOIP,HK,DIRECT
   - IP-CIDR,45.195.183.110/8,DIRECT
-  - DOMAIN,github.com,Shadowsocks-2
-  - DOMAIN,google.com,Shadowsocks
-  - DOMAIN,youtube.com,V2Ray
+  - DOMAIN,github.com,韩区-春川V2ray
+  - DOMAIN,google.com,韩区-春川V2ray
+  - DOMAIN,youtube.com,韩区-春川V2ray
   - DOMAIN-KEYWORD,amazon,Proxy
   - DOMAIN-KEYWORD,google,Proxy
   - DOMAIN-KEYWORD,gmail,Proxy
