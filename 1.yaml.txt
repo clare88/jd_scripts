@@ -21,7 +21,7 @@ proxies:
     server: v2.clare88.ml
     port: 443
     uuid: 39b69eca-b4fd-40cb-de1f-73355ce73b14
-    alterId: 0
+    alterId: 64
     cipher: auto
     tls: true
     network: ws
