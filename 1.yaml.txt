@@ -33,16 +33,16 @@ proxy-groups:
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 美区-圣何塞V2ray
-      - 韩区-春川V2ray
+      - US_美国_1
+      - KR_韩区_1
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 美区-圣何塞V2ray
-      - 韩区-春川V2ray
+      - US_美国_1
+      - KR_韩区_1
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -60,8 +60,8 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 美区-圣何塞V2ray
-      - 韩区-春川V2ray
+      - US_美国_1
+      - KR_韩区_1
 rules:
   - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
   - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
