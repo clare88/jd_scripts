@@ -37,7 +37,7 @@ proxy-groups:
     interval: 600
 rules:
   - DOMAIN-KEYWORD,yuanyuan.cncalife.com,DIRECT
-  - DOMAIN-SUFFIX,kongxiangrui.xyz,Shadowsocks-2
+  - DOMAIN-SUFFIX,kongxiangrui.xyz,韩区-春川V2ray
   - GEOIP,HK,DIRECT
   - IP-CIDR,45.195.183.110/8,DIRECT
   - DOMAIN,github.com,韩区-春川V2ray
