@@ -1,0 +1,91 @@
+mixed-port: 7890
+allow-lan: true
+mode: rule
+log-level: info
+external-controller: 127.0.0.1:9090
+secret: ""
+proxies:
+  - name: "美区-圣何塞V2ray"
+    type: vmess
+    server: v2.clare886.cf
+    port: 443
+    uuid: 96e3f69e-ec37-4485-a2ca-a89e658661cb
+    alterId: 64
+    cipher: auto
+    tls: true
+    network: ws
+    ws-path: /xiaoshenshen
+    Host: v2.clare886.cf
+  - name: "韩区-春川V2ray"
+    type: vmess
+    server: v2.clare88.ml
+    port: 443
+    uuid: 26362ba2-a7c5-436a-a6d4-a95ba49f4e89
+    alterId: 64
+    cipher: auto
+    tls: true
+    network: ws
+    ws-path: /xiaoshenshen
+    Host: v2.clare88.ml
+proxy-groups:
+  - name: Proxy
+    proxies:
+      - 美区-圣何塞V2ray
+      - 韩区-春川V2ray
+    type: fallback
+    url: http://www.gstatic.com/generate_204
+    interval: 600
+rules:
+  - DOMAIN-KEYWORD,yuanyuan.cncalife.com,DIRECT
+  - DOMAIN-SUFFIX,kongxiangrui.xyz,Shadowsocks-2
+  - GEOIP,HK,DIRECT
+  - IP-CIDR,45.195.183.110/8,DIRECT
+  - DOMAIN,github.com,Shadowsocks-2
+  - DOMAIN,google.com,Shadowsocks
+  - DOMAIN,youtube.com,V2Ray
+  - DOMAIN-KEYWORD,amazon,Proxy
+  - DOMAIN-KEYWORD,google,Proxy
+  - DOMAIN-KEYWORD,gmail,Proxy
+  - DOMAIN-KEYWORD,youtube,Proxy
+  - DOMAIN-KEYWORD,facebook,Proxy
+  - DOMAIN-SUFFIX,fb.me,Proxy
+  - DOMAIN-SUFFIX,fbcdn.net,Proxy
+  - DOMAIN-KEYWORD,twitter,Proxy
+  - DOMAIN-KEYWORD,instagram,Proxy
+  - DOMAIN-KEYWORD,dropbox,Proxy
+  - DOMAIN-SUFFIX,twimg.com,Proxy
+  - DOMAIN-KEYWORD,blogspot,Proxy
+  - DOMAIN-SUFFIX,youtu.be,Proxy
+  - DOMAIN-KEYWORD,whatsapp,Proxy
+  - DOMAIN-KEYWORD,admarvel,REJECT
+  - DOMAIN-KEYWORD,admaster,REJECT
+  - DOMAIN-KEYWORD,adsage,REJECT
+  - DOMAIN-KEYWORD,adsmogo,REJECT
+  - DOMAIN-KEYWORD,adsrvmedia,REJECT
+  - DOMAIN-KEYWORD,adwords,REJECT
+  - DOMAIN-KEYWORD,adservice,REJECT
+  - DOMAIN-KEYWORD,domob,REJECT
+  - DOMAIN-KEYWORD,duomeng,REJECT
+  - DOMAIN-KEYWORD,dwtrack,REJECT
+  - DOMAIN-KEYWORD,guanggao,REJECT
+  - DOMAIN-KEYWORD,lianmeng,REJECT
+  - DOMAIN-SUFFIX,mmstat.com,REJECT
+  - DOMAIN-KEYWORD,omgmta,REJECT
+  - DOMAIN-KEYWORD,openx,REJECT
+  - DOMAIN-KEYWORD,partnerad,REJECT
+  - DOMAIN-KEYWORD,pingfore,REJECT
+  - DOMAIN-KEYWORD,supersonicads,REJECT
+  - DOMAIN-KEYWORD,uedas,REJECT
+  - DOMAIN-KEYWORD,umeng,REJECT
+  - DOMAIN-KEYWORD,usage,REJECT
+  - DOMAIN-KEYWORD,wlmonitor,REJECT
+  - DOMAIN-KEYWORD,zjtoolbar,REJECT
+  - DOMAIN-SUFFIX,local,DIRECT
+  - IP-CIDR,127.0.0.0/8,DIRECT
+  - IP-CIDR,172.16.0.0/12,DIRECT
+  - IP-CIDR,192.168.0.0/16,DIRECT
+  - IP-CIDR,10.0.0.0/8,DIRECT
+  - IP-CIDR,17.0.0.0/8,DIRECT
+  - IP-CIDR,100.64.0.0/10,DIRECT
+  - GEOIP,CN,DIRECT
+  - MATCH,Proxy
