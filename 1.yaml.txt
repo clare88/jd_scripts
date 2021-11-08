@@ -20,12 +20,12 @@ proxies:
     type: vmess
     server: v2.clare88.ml
     port: 443
-    uuid: 26362ba2-a7c5-436a-a6d4-a95ba49f4e89
+    uuid: 39b69eca-b4fd-40cb-de1f-73355ce73b14
     alterId: 64
     cipher: auto
     tls: true
     network: ws
-    ws-path: /xiaoshenshen
+    ws-path: /shen
     Host: v2.clare88.ml
 proxy-groups:
   - name: 🚀 节点选择
