@@ -5,7 +5,7 @@ mode: Rule
 log-level: info
 external-controller: 0.0.0.0:9090
 proxies:
-  - name: "美区-圣何塞V2ray"
+  - name: "US_美国_1"
     type: vmess
     server: v2.clare886.cf
     port: 443
@@ -16,7 +16,7 @@ proxies:
     network: ws
     ws-path: /xiaoshenshen
     Host: v2.clare886.cf
-  - name: "韩区-春川V2ray"
+  - name: "KR_韩区_1"
     type: vmess
     server: v2.clare88.ml
     port: 443
